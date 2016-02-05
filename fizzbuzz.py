@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
 Author: Payton
-Credit: Mr. Dennison
+Credit: Mr. Dennison, Ethan
 
 Assignment:
 
@@ -54,5 +54,8 @@ if f == 3 or f in range(f*3):
 if b == 5 or b in range(b*5):
     print("Buzz")
     
-print("{0:<3} ".format(n)
+if f in range(f*3) and b in range(b*5):
+    print("FizzBuzz")
+    
+print("{0: <3} ".format(n, =end"")
 print()

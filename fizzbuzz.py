@@ -48,14 +48,12 @@ n = int(float(input("How many numbers shall we print? ")))
 f = int(float(input("For multiples of what number shall we print 'Fizz'? ")))
 b = int(float(input("For multiples of what number shall we print 'Buzz'? ")))
 
-if f == 3 or f in range(f*3):
-    print("Fizz")
-    
-if b == 5 or b in range(b*5):
-    print("Buzz")
-    
-if f in range(f*3) and b in range(b*5):
-    print("FizzBuzz")
-    
-print("{0: <3} ".format(n, =end"")
-print()
+for x in range(1, n+1):
+    if f == 3 or f in range(f*3):
+        print("Fizz")
+    if b == 5 or b in range(b*5):
+        print("Buzz")
+    elif f in range(f*3) and b in range(b*5):
+        print("FizzBuzz")
+    else:
+        print(x)

@@ -49,11 +49,11 @@ f = int(float(input("For multiples of what number shall we print 'Fizz'? ")))
 b = int(float(input("For multiples of what number shall we print 'Buzz'? ")))
 
 for x in range(1, n+1):
-    if f == 3 or f in range(f*3):
-        print("Fizz")
-    if b == 5 or b in range(b*5):
+    if x%f==0 and x%b==0:
+        print("FizzBuzz")
+    elif x == 5 or x in range(b*5):
         print("Buzz")
-    elif f in range(f*3) and b in range(b*5):
+    elif x in range(f*3) and x in range(b*5):
         print("FizzBuzz")
     else:
         print(x)

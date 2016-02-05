@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Payton
+Credit: Mr. Dennison
 
 Assignment:
 
@@ -47,3 +47,12 @@ Buzz
 n = int(float(input("How many numbers shall we print? ")))
 f = int(float(input("For multiples of what number shall we print 'Fizz'? ")))
 b = int(float(input("For multiples of what number shall we print 'Buzz'? ")))
+
+if f == 3 or f in range(f*3):
+    print("Fizz")
+    
+if b == 5 or b in range(b*5):
+    print("Buzz")
+    
+print("{0:<3} ".format(n)
+print()
